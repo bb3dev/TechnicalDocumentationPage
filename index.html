@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav id="navbar">
+        <header>HTML & CSS Documentation</header>
+        <ul>
+            <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+            <a href="#Getting_Started_with_HTML" class="nav-link">
+                <li>Getting Started with HTML</li>
+            </a>
+            <a href="#Getting_Started_with_CSS" class="nav-link">
+                <li>Getting Started with CSS</li>
+            </a>
+            <a href="#HTML_Syntax" class="nav-link">
+                <li>HTML Syntax</li>
+            </a>
+            <a href="#CSS_Syntax" class="nav-link"><li>CSS Syntax</li></a>
+            <a href="#Reference" class="nav-link"><li>Reference</li></a>
+        </ul>
+    </nav>
+    <!--Main Document-->
+    <div id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+            <p>At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of
+                text to give them different meaning in a document , structure a document into logical sections , and
+                embed content such as images and videos into a page. <code></code> Before starting, you
+                don't need any previous HTML knowledge, but you should have at least basic familiarity with using
+                computers and using the web passively...  </p>
+             <ul>
+                 <li>For example, just looking at it and consuming content on the web.</li>
+                 <li>You should have a basic work environment set up. (Web browser and a text editor) </li>
+                 <li>Also understand how to create and manage files.</li>
+             </ul>   
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size and spacing of your content, split it
+                into multiple columns, or add animations and other decorative features. Before starting, you
+                should have:</p>
+            <ul>
+                <li>Basic familiarity with using computers, and using the Web passively.</li>
+                <li>A basic work environment set up as detailed in Installing basic software, and an understanding of
+                    how to create and manage files.</li>
+                <li>Basic familiarity with HTML.</li>
+            </ul>
+        </article>
+        </section>
+        <!--HTML section-->
+        <section class="main-section" id="Getting_Started_with_HTML">
+             <header>Getting Started with HTML</header>
+             <article>
+                 <h2>What is HTML?</h2>
+             <p>HTML (Hypertext Markup Language) is not a programming language; it is a markup language used to tell
+                 your browser how to structure the web pages you visit. It can be as complicated or as simple as the web
+                 developer wishes it to be. HTML consists of a series of elements, which you use to enclose, wrap, or
+                 mark up different parts of the content to make it appear or act a certain way. The enclosing tags can
+                 make a bit of content into a hyperlink to link to another page on the web, italicize words, and so on.
+                 For example, take the following line of content: <br>My puppy is afraid of everything that moves.
+                 <br>
+                 <code>&lt;p&gt;My puppy is afraid of everything that moves.&lt;/p&gt;</code></p>
+                 <p>**Note: Tags in HTML are case-insensitive, i.e. they can be written in uppercase or lowercase. For
+                     example, a &lt;title&gt; tag could be written as &lt;title&gt;, &lt;TITLE&gt;, &lt;Title&gt;,
+                     &lt;TiTlE&gt;, etc., and it will work fine. Best practice, however, is to write all tags in lowercase for consistency, readability other reasons.**</p>
+             </article>
+         </section>
+         <!--CSS Section-->
+        <section class="main-section" id="Getting_Started_with_CSS">
+              <header>Getting Started with CSS</header>
+              <article>
+                  <h2>What is CSS?</h2>
+              <p>CSS (Cascading Style Sheets) is a language for specifying how documents are presented to users — how
+                  they are styled, laid out,
+                  etc. It allows you to create great looking web pages, but how does it work under
+                  the hood? How does the browser turn HTML into a Document Object Model
+                  (DOM), how is CSS applied to parts of the DOM, and what code is used
+                  to actually include our CSS in our web page?
+                  <br>A CSS stylesheet is applied to the HTML using a &lt;link&gt; element within the &lt;head&gt; tag. For example:
+                  <code> &lt;link rel="stylesheet" href="style.css"&gt;</code></p>
+                  <h2>How does CSS affect HTML?</h2>
+                  <p>Web browsers apply CSS rules to a document to affect how they are displayed. A set of CSS rules
+                      contained within a stylesheet determines how a webpage should look. A CSS rule is formed
+                      from:</p>
+              <ul>
+                  <li>A set of <strong>properties</strong>, which have values set to update how the HTML content is
+                      displayed, for
+                      example, I want my element's width to be 50% of its parent element, and its background to be red.
+                  </li>
+                  <li>A <strong>selector</strong>, which selects the element(s) you want to apply the updated property
+                      values to. For
+                      example, I want to apply my CSS rule to all the paragraphs in my HTML document.</li>
+              </ul>
+              </article>
+          </section>
+          <!--Syntax Section-->
+        <section class="main-section" id="HTML_Syntax">
+               <header>HTML Syntax</header>
+               <article>
+                   <h2>The Anatomy of an HTML Element</h2>
+                    <p>Lets explore the paragraph element a bit...
+                        <code>&lt;p&gt;My cat is very grumpy.&lt;/p&gt;</code>
+                    </p>
+                    <figure><img src="http://bit.ly/2V9Vdxd" alt="HTML anatomy"></figure>
+                   
+                   <p>The main parts of this element are:</p>
+                   <ol>
+                       <li>The opening tag: This consists of the name of the element (in this case, p), wrapped in
+                           opening and closing angle brackets. This states where the element begins or starts to take
+                           effect — in this case where the start of the paragraph is.</li>
+                       <li>The closing tag: This is the same as the opening tag, except that it includes a forward slash
+                           before the element name. This states where the element ends — in this case where the end of
+                           the paragraph is. Failing to include a closing tag is a common beginner error and can lead to
+                           strange results.</li>
+                       <li>The content: This is the content of the element, which in this case is just text.</li>
+                       <li>The element: The opening tag plus the closing tag plus the content equals the element.</li>
+                   </ol>
+               
+               </article>
+           </section>
+        <section class="main-section" id="CSS_Syntax">
+                <header>CSS Syntax</header>
+                <article>
+                <h2>The Anatomy of a CSS Property</h2>
+                <p>First of all, let's take a simple HTML document, containing an &lt;h1&gt; and a &lt;p&gt; (notice
+                    that a stylesheet is applied to the HTML using a &lt;link&gt; element):
+                            <br>
+                            <code>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html&gt;
+
+                                &lt;head&gt;
+                                    &lt;meta charset="utf-8"&gt;
+                                    &lt;title&gt;My CSS experiment&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="style.css"&gt;
+                                &lt;/head&gt;
+
+                                &lt;body&gt;
+                                    &lt;h1&lt;Hello World!&lt;/h1&gt;
+                                    &lt;p&gt;This is my first CSS example&lt;/p&gt;
+                                &lt;/body&gt;
+
+                                &lt;/html&gt;
+                            </code><br></p>
+                            <p>Now let's look at a very simple CSS example containing two rules:
+                                <code>h1 {
+                                    color: blue;
+                                    background-color: yellow;
+                                    border: 1px solid black;
+                                    }
+                                    p {
+                                        color: red;
+                                    }</code>
+                            </p>
+                            <p>The first rule starts with an h1 selector, which means that it will apply its property
+                                values to the &lt;h1&gt; element. It contains three properties and their values (each
+                                property/value pair is called a declaration):</p>
+                                <ol>
+                                    <li>The first one sets the text color to blue.</li>
+                                    <li>The second sets the background color to yellow.</li>
+                                    <li>The third one puts a border around the header that is 1 pixel wide, solid (not
+                                        dotted, or dashed, etc.), and colored black.</li>
+                                </ol>
+                                <p>The second rule starts with a p selector, which means that it will apply its property
+                                    values to the &lt;p&gt; element. It contains one declaration, which sets the text color to
+                                    red. In a web browser, the code above would produce the following output:</p>
+                                    <figure><img src="http://bit.ly/2CNht9b" alt="CSS example"></figure>
+                </article>
+            </section>
+            <!--Reference-->
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <article>
+                    <li>All the documentation in this page is taken from
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">here</a>
+                        and 
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">here</a> on 
+                        <a href="https://developer.mozilla.org/en-US/MDN" target="_blank">MDN</a>
+                    </li>
+                </article>
+            </section>
+
+        </div>
+    <a class="go-top-button" href="#"> <i class="fas fa-arrow-up"></i> </a>
+   
+</body>
+</html>
